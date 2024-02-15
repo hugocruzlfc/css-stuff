@@ -1,10 +1,12 @@
 import React from "react";
-import { Buttons } from "./components";
+import { Board, Buttons, CardHover } from "./components";
 
 function App() {
   return (
     <div>
+      <Board />
       <Buttons />
+      <CardHover />
     </div>
   );
 }

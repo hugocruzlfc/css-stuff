@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import styles from "./styles.module.css";
 
 export const Buttons: React.FC = () => {
   const syncPointer = ({
@@ -28,15 +29,15 @@ export const Buttons: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <button>
-        <span>Button</span>
+    <div className={styles.container}>
+      <button className={styles.current__button}>
+        <span className={styles.current__span}>Button</span>
       </button>
-      <button>
-        <span>Button</span>
+      <button className={styles.current__button}>
+        <span className={styles.current__span}>Button</span>
       </button>
-      <button>
-        <span>Button</span>
+      <button className={styles.current__button}>
+        <span className={styles.current__span}>Button</span>
       </button>
     </div>
   );

@@ -1,0 +1,21 @@
+@keyframes board-anim {
+  0%,
+  85%,
+  100% {
+    filter: blur(0px);
+  }
+  90% {
+    filter: blur(5px) contrast(200%);
+  }
+}
+
+.board {
+  padding: 12px 50px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ff9d00;
+  color: #222;
+  display: inline-block;
+  animation: board-anim 3s infinite linear;
+  margin: 10px 0 20px 0;
+}
