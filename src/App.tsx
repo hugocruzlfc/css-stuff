@@ -1,9 +1,10 @@
 import React from "react";
-import { Board, Buttons, CardHover } from "./components";
+import { Board, Buttons, CardHover, Navbar } from "./components";
 
 function App() {
   return (
     <div>
+      <Navbar />
       <Board />
       <Buttons />
       <CardHover />
